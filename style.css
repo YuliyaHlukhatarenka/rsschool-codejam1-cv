@@ -1,0 +1,27 @@
+body {
+    width: 1024px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-areas:
+    'header header header header header header'
+    'left main main main right right'
+    'left footer footer footer footer footer';
+  grid-gap: 10px;
+  background-image: url(img/background.png);
+  padding: 10px;
+
+}
+
+header {
+    grid-area: header; 
+    text-align: center;
+    
+}
+
+aside.contacts { 
+    grid-area: left;
+}
+
+main { grid-area: main; }
+aside.skills { grid-area: right; }
+footer { grid-area: footer; }
