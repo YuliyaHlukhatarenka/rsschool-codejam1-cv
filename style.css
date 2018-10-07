@@ -22,6 +22,7 @@ h3, h4 {
 
 li {
     font-size: 1rem;
+    font-weight: normal;
 }
 header {
     grid-area: header; 
@@ -44,6 +45,10 @@ aside section {
 
 main { 
     grid-area: main;
+}
+
+main section {
+    padding: 10px 0;
 }
 
 footer { 
