@@ -1,0 +1,62 @@
+body {
+  display: grid;
+  grid-template-areas:
+    'header header header'
+    'left main main'
+    'footer footer footer';
+  grid-gap: 10px;
+  width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+  background: url(img/background.png) no-repeat;
+  background-size: cover;
+  font-family: Papyrus, 'Tahoma', sans-serif;
+  font-size: 20px;
+  line-height: 1.2em;
+}
+
+header,
+aside,
+main,
+footer {
+  padding: 10px 10px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+li {
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+header {
+  grid-area: header;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+aside {
+  grid-area: left;
+  background-color: rgba(0, 0, 0, 0.1);
+  word-wrap: break-word;
+}
+aside section {
+  padding: 10px 0;
+  border-bottom-style: dotted;
+  max-width: 250px;
+  word-wrap: break-word;
+}
+
+main {
+  grid-area: main;
+}
+
+main section {
+  padding: 10px 0;
+}
+
+footer {
+  grid-area: footer;
+}
