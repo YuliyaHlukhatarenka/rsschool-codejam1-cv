@@ -1,27 +1,42 @@
 body {
-    width: 1024px;
-    margin: 0 auto;
     display: grid;
     grid-template-areas:
-    'header header header header header header'
-    'left main main main right right'
-    'left footer footer footer footer footer';
+    'header header header'
+    'left main main'
+    'left footer footer';
   grid-gap: 10px;
-  background-image: url(img/background.png);
+  width: 1024px;
+  margin: 0 auto;
   padding: 10px;
-
+  background: url(img/background.png) no-repeat;
+  background-size: 100%; 
+  font-family: Papyrus, "Tahoma", sans-serif;
 }
 
+header, aside, main, footer {
+    padding: 20px 20px;
+}
+li {
+    font-size: 1rem;
+}
 header {
     grid-area: header; 
     text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
     
 }
 
-aside.contacts { 
+aside { 
     grid-area: left;
+    background-color:rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+aside section {
+    padding: 10px 0;
+    border-bottom-style: dotted;
+    max-width: 250px;
+    word-wrap: break-word;
 }
 
 main { grid-area: main; }
-aside.skills { grid-area: right; }
 footer { grid-area: footer; }
